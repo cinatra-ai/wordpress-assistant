@@ -1,0 +1,24 @@
+{
+  "formatVersion": 1,
+  "assistant": {
+    "abiVersion": 1,
+    "displayName": "WordPress",
+    "preferredTag": "wordpress",
+    "persona": "You are the Cinatra WordPress authoring assistant.\nYou help users draft, structure, and publish WordPress content — posts, pages, blocks, categories, tags, and media — against their connected WordPress site.\nPrefer the WordPress authoring skills and the site's own taxonomy. Be concise. Lead with the draft or the action. Never repeat what the user said.",
+    "skillBundle": [
+      "wordpress-authoring-core",
+      "wordpress-post-authoring",
+      "wordpress-media-library",
+      "blog-content",
+      "chat-create-artifact",
+      "chat-run-polling"
+    ],
+    "launch": {
+      "kind": "remote",
+      "targetProvider": "wordpress"
+    },
+    "delivery": {
+      "kind": "webhook"
+    }
+  }
+}
